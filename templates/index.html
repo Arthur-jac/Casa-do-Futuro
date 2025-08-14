@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Casa do Fututo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="../static/styles/estilo.css">
+</head>
+<body>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h1>Transforme sua Casa em um Lar Inteligente</h1>
+    <p>Automatize iluminação, segurança, climatização e muito mais com nossas soluções personalizadas e tecnologia de ponta!</p>
+  </section>
+
+  <!-- Cards -->
+  <div class="container mt-5">
+  <section class="cards">
+    <div class="card-custom">
+      <img src="../static/imgs/painel-de-controle.gif" alt="Controle Total" height="100 px" width="100 px">
+      <h4>Controle Total</h4>
+      <p>Gerencie todos os seus dispositivos de casa apenas com sua voz</p>
+    </div>
+    <div class="card-custom">
+      <img src="../static/imgs/camera-de-seguranca.gif" alt="Mais Segurança" height="100 px" width="100 px">
+      <h4>Mais Segurança</h4>
+      <p>Monitore sua residência de qualquer lugar.</p>
+    </div>
+    <div class="card-custom">
+      <img src="../static/imgs/comando-de-voz.gif" alt="Conforto Garantido" height="100 px" width="100 px">
+      <h4>Conforto Garantido</h4>
+      <p>Automatize tarefas e viva com mais praticidade.</p>
+    </div>
+  </section>
+  </div>
+   
+  <section class="container mt-5 solicite-automacao">
+    <h3>Solicite sua Automação</h3>
+    <h5>Sua casa inteligente começa aqui!</h5>
+    <blockquote>
+      Este formulário foi criado para entendermos melhor o que você deseja automatizar em sua casa ou local de trabalho. Com base nas suas respostas, nossa equipe elaborará uma sugestão personalizada de automação, indicando os dispositivos ideais e as rotinas mais adequadas ao seu estilo de vida.
+    </blockquote>
+  </section>
+  
+
+  <!-- Formulário -->
+  <div class="container mt-5 form-section">
+    <h1>Formulário de Diagnóstico</h1>
+      <form method="post" id="meuFormulario">
+        </br>
+        <div class="mb-3">
+          <label for="nome" class="form-label"><strong>Informe o seu nome:</strong></label>
+          <input type="text" class="form-control" name="nome" required>
+        </div>
+        
+        </br>
+        <div class="mb-3">
+          <label for="email" class="form-label"><strong>Informe o seu E-mail:</strong></label>
+          <input type="email" class="form-control" name="email"
+          id="email"
+          required>
+        </div>
+
+        </br>
+        <p>
+          <strong>
+            Você já possui algum dispositivo da Alexa (como Echo Dot, Echo Show, etc)?
+            Não se preocupe se não tiver certeza
+          </strong>
+        </p>
+
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" name="alexas" value="Echo Dot 3 Geração" id="alexaechodot3g">
+          <label class="form-check-label" for="alexaechodot3g">Echo Dot 3 Geração</label>
+        </div>
+        <img src="../static/imgs/alexa_dot_3g.jpg" class="img-thumbnail" alt="Echo Dot 3 Geração">
+        
+        <div></br></div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" name="alexas" value="Echo Dot 5 Geração" id="alexaechodot5g">
+          <label class="form-check-label" for="alexaechodot5g">Echo Dot 5 Geração</label>
+        </div>
+        <img src="../static/imgs/echo_dot_5.jpg" class="img-thumbnail" alt="Echo Dot 5 Geração">
+      
+        <div></br></div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" name="alexas" value="Echo Pop" id="alexapop">
+          <label class="form-check-label" for="alexapop">Echo Pop</label>
+        </div>
+        <img src="../static/imgs/echo_pop.jpg" class="img-thumbnail" alt="Echo Pop">
+
+        <div></br></div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" name="alexas" value="Echo Studio" id="alexastudio">
+          <label class="form-check-label" for="alexastudio">Echo Studio</label>
+        </div>
+        <img src="../static/imgs/echo_studio.jpg" class="img-thumbnail" alt="Echo Studio">
+
+        <div></br></div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" name="alexas" value="Echo Show 5" id="alexashow5">
+          <label class="form-check-label" for="alexashow5">Echo Show 5</label>
+        </div>
+        <img src="../static/imgs/echo_show_5.jpg" class="img-thumbnail" alt="Echo Show 5">
+
+        <div></br></div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" name="alexas" value="Echo Show 8" id="alexashow8">
+          <label class="form-check-label" for="alexashow8">Echo Show 8</label>
+        </div>
+        <img src="../static/imgs/echo_show_8.jpg" class="img-thumbnail" alt="Echo Show 8">
+
+        <div></br></div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" name="alexas" value="Echo Show 15" id="alexashow15">
+          <label class="form-check-label" for="alexashow15">Echo Show 15</label>
+        </div>
+        <img src="../static/imgs/echo_show_15.jpg" class="img-thumbnail" alt="Echo Show 15">
+        <!-- Fim Pergunta Alexas -->
+        
+        <div></br></div>
+        
+        <div class="mb-3">
+          <label for="dispositivos" class="form-label"><strong>Quantos dispositivos Echo (Alexas) você possui?</strong></label>
+          <input type="number" class="form-control" name="dispositivos" required>
+        </div>
+        
+        </br>
+        <div class="mb-3">
+          <label class="form-label"><strong>Quais ambientes você gostaria de automatizar?(Ex: Sala, Quarto...)</strong></label>
+          <textarea class="form-control" name="comodos" rows="3" required></textarea>
+        </div>
+
+        </br>
+        <p><strong>Você já tem algum equipamento inteligente na sua casa?</p>
+        <p>(Marque os que você já tem. Caso não tenha, não se preocupe!)</p></strong>
+
+        {% for equipamento in equipamentos %}
+          <div class="form-check">
+            <input class="form-check-input"
+                  type="checkbox"
+                  name="equipamentos"
+                  value="{{ equipamento }}"
+                  id="obj{{ loop.index }}">
+            <label class="form-check-label" for="obj{{ loop.index }}">{{ equipamento }}</label>
+          </div>
+        {% endfor %}
+
+        <!-- Checkbox "Outros" -->
+        <div class="form-check">
+          <input class="form-check-input"
+                type="checkbox"
+                id="outrosCheck1"
+                name="outrosCheck1"
+                value="Outros">
+          <label class="form-check-label" for="outrosCheck1">Outros</label>
+        </div>
+
+        <!-- Campo extra -->
+        <div class="mb-3 mt-2" id="outrosTextoDiv1" style="display: none;">
+          <label for="outrosTextoDiv1" class="form-label">Descreva:</label>
+          <input type="text" class="form-control" name="equipamentos" id="outrosTextoDiv1">
+        </div>
+
+        </br>
+        <div class="mb-3">
+          <label class="form-label"><strong>O que você gostaria de fazer com a automação? (Ex: Ligar/Desligar dispositivos, Aumentar o conforto...)</strong></label>
+          <textarea class="form-control" name="desejo_automacao" rows="3" required></textarea>
+        </div>
+
+        </br>
+        <div class="mb-3">
+          <label class="form-label"><strong>Tem alguma preferência de marca ou estilo de produto?
+            (Ex: gosto da Samsung, quero produtos discretos, etc)</strong></label>
+          <textarea class="form-control" name="pref_marca" rows="3" required></textarea>
+        </div>
+
+        </br>
+        <div class="mb-3">
+          <label class="form-label"><strong>
+            Como é a sua rotina em casa?
+            (ex: trabalho em home office, chego tarde, cuido de crianças, viajo com frequência, etc.)</strong>
+          </label>
+          <textarea class="form-control" name="rotina" rows="3" required></textarea>
+        </div>
+
+      </br>
+      <p><strong>Qual desses objetivos tem mais a ver com o que você procura?</strong></p>
+
+      {% for objetivo in objetivos %}
+        <div class="form-check">
+          <input class="form-check-input"
+                type="checkbox"
+                name="objetivos"
+                value="{{ objetivo }}"
+                id="obj{{ loop.index }}">
+          <label class="form-check-label" for="obj{{ loop.index }}">{{ objetivo }}</label>
+        </div>
+      {% endfor %}
+
+        <!-- Checkbox "Outros" -->
+        <div class="form-check">
+          <input class="form-check-input"
+                type="checkbox"
+                id="outrosCheck2"
+                name="outrosCheck2"
+                value="Outros">
+          <label class="form-check-label" for="outrosCheck2">Outros</label>
+        </div>
+
+        <!-- Campo extra -->
+        <div class="mb-3 mt-2" id="outrosTextoDiv2" style="display: none;">
+          <label for="outrosTextoDiv2" class="form-label">Descreva:</label>
+          <input type="text" class="form-control" name="objetivos" id="outrosTextoDiv2">
+        </div>
+
+
+      </br>
+      <div class="mb-3">
+      <label class="form-label"><strong>Qual é o seu imóvel?</strong></label>
+
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="imovel_tipo" id="it1" value="Casa">
+        <label class="form-check-label" for="it1">
+          Condomínio
+        </label>
+      </div>
+
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="imovel_tipo" id="it2" value="Apartamento">
+        <label class="form-check-label" for="it2">
+          Apartamento
+        </label>
+      </div>
+
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="imovel_tipo" id="it3"value="Sobrado">
+        <label class="form-check-label" for="it3">
+          Sobrado
+        </label>
+      </div>
+
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="imovel_tipo" id="it4" value="Kitnet">
+        <label class="form-check-label" for="it4">
+          Kitnet
+        </label>
+      </div>
+      
+      </div>
+
+      </br>
+      <div class="mb-3">
+      <label class="form-label"><strong>Seu imóvel é:</strong></label>
+
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="imovel_proprio" id="i1" value="Próprio">
+          <label class="form-check-label" for="i1">
+            Próprio
+          </label>
+        </div>
+
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="imovel_proprio" id="i2" value="Alugado">
+            <label class="form-check-label" for="i2">
+              Alugado
+            </label>
+        </div>
+
+      </div>
+      
+    </br>
+      <div class="mb-3">
+      <label class="form-label"><strong>Qual o seu nível de afinidade com a tecnologia?</strong></label>
+
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="famtec" id="ft1" value="Nada Familiar">
+          <label class="form-check-label" for="ft1">
+            Nada Familiar
+          </label>
+        </div>
+
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="famtec" id="ft2" value="Me Viro Bem">
+          <label class="form-check-label" for="ft2">
+            Me Viro Bem
+          </label>
+        </div>
+
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="famtec" id="ft3" value="Muito Familiar">
+          <label class="form-check-label" for="ft3">
+            Muito Familiar
+          </label>
+        </div>
+
+      </div>
+      
+    </br>
+      <div class="mb-3">
+        <label for="orcamento" class="form-label"><strong>
+          Qual seria o valor estimado de orçamento mensal que você estaria disposto(a) a investir em automação? Se não souber, não se preocupe! Vamos apresentar algumas opções de planos para te ajudar.</strong>
+        </label>
+        <input type="number" class="form-control" name="orcamento">
+      </div>
+
+      </br>
+      <button type="submit" class="btn btn-outline-success">Enviar Formulário</button>
+      </br>
+
+      </form>
+  </div>
+
+
+  <div>
+      <footer>
+      &copy; 2025 Casa do Futuro |
+      <a href="https://instagram.com/seuusuario" target="_blank" title="Instagram">
+           <img src="../static/imgs/instagram.png" alt="Controle Total" height="28 px" width="28 px">
+      </a>
+  </footer>
+  </div>
+
+  <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
